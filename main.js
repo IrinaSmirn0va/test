@@ -110,6 +110,6 @@ app.post('/add-number/:id_abonent', async function(req,res){
 	res.redirect(`/abonent-number/${id_abonent}`);
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT,function(){
 	console.log('server start');
 });
